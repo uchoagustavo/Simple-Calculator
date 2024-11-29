@@ -1,0 +1,110 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Font Import */
+@font-face {
+    font-family: 'DS-DIGI';
+    src: url('ds_digital/DS-DIGI.TTF') format('truetype'),
+    url('ds_digital/DS-DIGIB.TTF') format('truetype'),
+    url('ds_digital/DS-DIGII.TTF') format('truetype'),
+    url('ds_digital/DS-DIGIT.TTF') format('truetype');
+}
+
+/* Body */
+body {
+    background-image: linear-gradient(#d9ffff, #d6fff6);
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header */
+.header {
+    font-size: 25px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.header h1 {
+    color: #d182ff;
+    margin-top: 15px;
+    font-family: DS-DIGI;
+}
+
+/* Calculator Container */
+.calc {
+    position: relative;
+    margin-top: 50px;
+    height: 600px;
+    width: 400px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 7px 25px -5px rgba(0, 3, 18, 1);
+    padding: 20px;
+}
+
+/* Display */
+.display {
+    background-color: rgba(38, 38, 143, 0.68);
+    height: 80px;
+    border-radius: 5px;
+    font-family: 'DS-DIGI', sans-serif;
+    font-size: 60px;
+    color: #6fffe7;
+    text-align: right;
+    padding: 10px;
+    overflow: hidden;
+}
+
+/* Buttons Container */
+.btns {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Button Rows */
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+/* Buttons */
+.btn {
+    background: linear-gradient(#5f5ba9, #4f74c5);
+    color: #fff;
+    margin-top: 15px;
+    border: none;
+    border-radius: 10px;
+    width: 95px;
+    height: 60px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+/* Footer */
+.footer {
+    margin-top: auto;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: #36237a;
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+}
